@@ -19,7 +19,7 @@ public class PostApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/posts").allowedOrigins("http://localhost:8081");
+				registry.addMapping("/**").allowedOrigins("http://localhost:8081");
 			}
 		};
 	}

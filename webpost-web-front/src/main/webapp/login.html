@@ -20,7 +20,7 @@
 
           // Perform validation and authentication here (e.g., through AJAX).
           $.ajax({
-            url: "http://localhost:8080/users/" + username, // Replace with your backend API URL for user login
+            url: `http://localhost:8080/users/${username}`, // Replace with your backend API URL for user login
             method: "GET",
             contentType: "application/json",
             success: function (response) {
